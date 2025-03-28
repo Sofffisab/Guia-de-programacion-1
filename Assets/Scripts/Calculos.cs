@@ -2,17 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DeclaracionDeVariables : MonoBehaviour
+public class Calculos : MonoBehaviour
 {
-    int cantAnimales;
-    float pesoPromedioAnimal;
-    string nombreAnimal;
-    bool estaEnfermo;
-
+    public int num1;
+    public int num2;
+    public int resultado;
     // Start is called before the first frame update
     void Start()
     {
-        
+        resultado = num1 + num2;
+        Debug.Log("El resultado a la suma es " + resultado);
     }
 
     // Update is called once per frame
